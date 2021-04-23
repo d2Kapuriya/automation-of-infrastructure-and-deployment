@@ -23,7 +23,7 @@ resource "aws_security_group_rule" "web_ingress"{
     to_port     = element(var.web_ports,count.index)
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
-	security_group_id = aws_security_group.allow_web.id
+	security_group_id = aws_security_group.demo_instance_sg.id
 }
 
 resource "aws_security_group_rule" "web_egress" {
@@ -34,7 +34,7 @@ resource "aws_security_group_rule" "web_egress" {
     to_port     = element(var.web_ports,count.index)
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
-	security_group_id = aws_security_group.allow_web.id
+	security_group_id = aws_security_group.demo_instance_sg.id
 }
 
 
