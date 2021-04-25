@@ -1,5 +1,5 @@
 terraform {
-  required_version = ">= 0.13.5" # introduction of Local Values configuration language feature
+  required_version = ">= 0.13.5" 
 }
 
 terraform {
