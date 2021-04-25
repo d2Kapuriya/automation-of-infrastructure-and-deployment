@@ -1,5 +1,6 @@
 provider "aws" {
-  region = var.region
+  profile = "default"
+  region  = var.region
 }
 
 resource "aws_security_group" "demo_instance_sg" {
