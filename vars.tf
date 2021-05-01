@@ -11,7 +11,7 @@ variable "web_ports" {
 variable "images" {
   type        = string
   description = "Ami id for instance"
-  default     = "ami-08f63db601b82ff5f"
+  default     = "ami-045e6fa7127ab1ac4"
 }
 
 variable "tags" {
